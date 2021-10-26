@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <title>Library</title>
+</head>
+
+<body>
+    <div class="main">
+        <div class="card text-white bg-info mb-3">
+            <div class="card-header">
+                <h3 class="card-title">Reading</h3>
+            </div>
+            <div class="card-body">
+                <table class="table">
+                    <thead class="thead-dark">
+                        <tr>
+                            <th scope="col">Book Name</th>
+                            <th scope="col">Author</th>
+                            <th scope="col">Page</th>
+                            <th scope="col">Finish</th>
+                        </tr>
+                    </thead>
+                    <tbody id="reading">
+                        <!--<tr>
+                            <td id="readingName">İnsanın Anlam Arayışı</td>
+                            <td id="readingAuthor">Viktor Frankl</td>
+                            <td id="readingPage">168</td>
+                        </tr> -->
+                    </tbody>
+                </table>
+
+            </div>
+        </div>
+
+        <div class="card text-white bg-success mb-3">
+            <div class="card-header">
+                <h3 class="card-title">Readed</h3>
+            </div>
+            <div class="card-body">
+                <table class="table">
+                    <thead class="thead-dark">
+                        <tr>
+                            <th scope="col">Book Name</th>
+                            <th scope="col">Author</th>
+                            <th scope="col">Page</th>
+                            <th scope="col">Delete</th>
+                        </tr>
+                    </thead>
+                    <tbody id="readed">
+                        <!-- <tr>
+                            <td id="readedName">İnsanın Anlam Arayışı</td>
+                            <td id="readedAuthor">Viktor Frankl</td>
+                            <td id="readedPage">168</td>
+                            <td>
+                                <button class="btn btn-success" id="finish" type="submit">Finish</button>
+                            </td>
+                        </tr> -->
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+        <div class="card text-white bg-danger">
+            <div class="card-header">
+                <h3 class="card-title">Will Read</h3>
+            </div>
+            <div class="card-body">
+                <table class="table">
+                    <thead class="thead-dark">
+                        <tr>
+                            <th scope="col">Book Name</th>
+                            <th scope="col">Author</th>
+                            <th scope="col">Page</th>
+                            <th scope="col">Start</th>
+                        </tr>
+                    </thead>
+                    <tbody id="willRead">
+                        <!-- <tr>
+                            <td>İnsanın Anlam Arayışı</td>
+                            <td>Viktor Frankl</td>
+                            <td>168</td>
+                            <td>
+                                <div class="input-group mb-3">
+                                    <input type="text" class="form-control" id="start-date" style="max-width: 8rem;" placeholder="Date">
+
+                                    <button class="btn btn-success" id="start" type="submit">Start</button>
+                                </div>
+                            </td>
+                        </tr> -->
+                    </tbody>
+                </table>
+            </div>
+            <div class="form-row ml-3" id="bookForm">
+                <div class="form-group col-md-5">
+                    <input type="text" class="form-control" id="bookName" placeholder="Book Name">
+                </div>
+                <div class="form-group col-md-3">
+                    <input type="text" class="form-control" id="author" placeholder="Author">
+                </div>
+                <div class="form-group col-md-2">
+                    <input type="text" class="form-control" id="page" placeholder="Page">
+                </div>
+                <div class="form-group col-md-2">
+                    <button type="submit" class="btn btn-success" id="addBtn">Add</button>
+                </div>
+            </div>
+        </div>
+
+
+
+
+
+
+        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+            integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+            crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+            integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+            crossorigin="anonymous"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+            integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+            crossorigin="anonymous"></script>
+
+        <script src="storage.js"></script>
+        <script src="ui.js"></script>
+        <script src="library.js"></script>
+        <script src="app.js"></script>
+</body>
+
+</html>
